@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { BoxCalculator } from './BoxCalculator'
-import { BoxResult } from './boxResult'
+import { BoxResult } from './BoxResult'
 import { getValueCrypto } from '../services/getValueCrypto'
 
 export default function Calculator () {
