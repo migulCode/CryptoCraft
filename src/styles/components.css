@@ -1,0 +1,30 @@
+.containCrypto{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.containerMode {
+    border-radius: 10px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.containerMode .icon {
+    height: 100%;
+    width: 100%;
+}
+
+.sun {
+    color: #F2C230;
+    font-size: 20px;
+}
+
+.moon {
+    color: white;
+    font-size: 20px;
+}

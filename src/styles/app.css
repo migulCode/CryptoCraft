@@ -1,0 +1,489 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Odor+Mean+Chey&display=swap');
+
+:root {
+    --main-text-color: #FFFFFF;
+    --secondary-text-color: #8F8F8F;
+    --highlight-color: #F7931A;
+    --dark-theme-background-secundary: #171717;
+    --dark-theme-background-color: #0F0F0F;
+    --amount-up: #00FF3E;
+    --amount-background-up: #06842560;
+    --border-color: #FFFFFF;
+
+    --size-h1: 1.5em;
+    --size-h2: 1.3em;
+    --size-h3: 1em;
+    --size-p: 0.8em;
+}
+
+/* Personalizar la barra de desplazamiento */
+::-webkit-scrollbar {
+    width: 5px;
+    /* Ancho de la barra de desplazamiento */
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+    /* Color de fondo de la barra */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    /* Color del control deslizante de la barra */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+    /* Color del control deslizante al pasar el mouse */
+}
+
+/* Personalizar el color de selección */
+::selection {
+    background: var(--highlight-color);
+    /* Color de fondo al seleccionar texto */
+    color: var(--border-color);
+    /* Color del texto seleccionado */
+}
+
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+main,
+.containerHeader,
+.containerFooter {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+body {
+    background-color: var(--dark-theme-background-color);
+    color: var(--main-text-color);
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+/* cabeza */
+
+.progressBar {
+    position: fixed;
+    z-index: 10;
+    top: 60px;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background-color: white;
+    transform-origin: 50%;
+    background-color: var(--highlight-color);
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--dark-theme-background-secundary);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+
+}
+
+.containerHeader {
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+}
+
+.containerLogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerLogo h1 {
+    font-family: 'Odor Mean Chey', serif;
+    font-size: 1.1em;
+    margin-left: -10px;
+}
+
+.containerLogo img {
+    width: 100%;
+    height: 140%;
+}
+
+.containerNav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    font-size: 0.6em;
+}
+
+/* cuerpo */
+
+main {
+    margin-top: 120px;
+}
+
+
+.mainIdeaContainer {
+    margin-bottom: 100px;
+}
+
+.containerPresentation {
+    display: flex;
+    flex-direction: column;
+    justify-content: none;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.containerPresentation h1 {
+    font-size: var(--size-h1);
+    margin-bottom: 15px;
+}
+
+.containerPresentation p {
+    color: var(--secondary-text-color);
+    font-size: var(--size-p);
+}
+
+.cryptoEnableb {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 40px;
+    font-size: var(--size-h2);
+
+}
+
+.containCrypto {
+    height: 20px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bolder;
+}
+
+.containCrypto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.containerCalculator {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.boxCalculator {
+    width: 480px;
+    height: 300px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-content: space-around;
+    justify-items: center;
+    outline: var(--border-color) solid 1px;
+    border-radius: 10px;
+}
+
+.containerField {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    color: var(--secondary-text-color);
+    position: relative;
+}
+
+.containerField label {
+    font-size: var(--size-p);
+}
+
+.boxInput {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0;
+    border: var(--secondary-text-color) solid 0.5px;
+    border-radius: 6px;
+    height: 35px;
+    width: 190px;
+    overflow: hidden;
+
+}
+
+.select {
+    background-color: transparent;
+    color: var(--border-color);
+    -webkit-appearance: button;
+    border: none;
+    outline: none;
+    appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+    padding-left: 13px;
+}
+
+.select .option {
+    background-color: var(--dark-theme-background-secundary);
+    color: var(--border-color);
+    font-size: 20px;
+    width: 300px;
+    border-radius: 0;
+    border: none;
+}
+
+
+.boxInput input {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: var(--main-text-color);
+    font: inherit;
+    text-indent: 5px;
+    font-size: 0.9em;
+}
+
+
+.containerField .iconField {
+    position: absolute;
+    top: 30px;
+    right: 10px;
+    font-size: 1.3em;
+}
+
+.boxInput .currency {
+    --secondary-text-color: #8f8f8f6c;
+    background-color: var(--secondary-text-color);
+    padding: 5px;
+}
+
+.boxInput .currency span {
+    color: var(--highlight-color);
+    font-weight: bolder;
+    line-height: 38px;
+    font-size: 0.8em;
+    text-align: center;
+    display: block;
+}
+
+
+
+.boxResult {
+    display: flex;
+    flex-direction: column;
+    width: 480px;
+}
+
+.boxResult h3 {
+    font-size: var(--size-h3);
+    margin-bottom: 10px;
+}
+
+.boxField {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 170px;
+    border: var(--border-color) solid 1px;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.boxField h1 {
+    font-size: var(--size-h2);
+    text-align: center;
+}
+
+.boxField span {
+    padding: 3px;
+    border-radius: 5px;
+    color: var(--amount-up);
+    background-color: var(--amount-background-up);
+}
+
+.boxAmount {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.boxResult input {
+    height: 40px;
+    width: 180px;
+    border-radius: 100px;
+    background-color: var(--highlight-color);
+    color: var(--main-text-color);
+    border: none;
+    outline: none;
+    margin: 0 auto;
+    font-size: 1em;
+    font-weight: bolder;
+}
+
+/* fin de la revision */
+
+.containerAbout {
+    border-bottom: var(--secondary-text-color) solid 1px;
+    border-top: var(--secondary-text-color) solid 1px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 50px 44px;
+}
+
+.containerAbout .boxAbout {
+    width: 540px;
+}
+
+.boxAbout h2 {
+    font-size: var(--size-h2);
+    margin-bottom: 20px;
+}
+
+.boxAbout p {
+    font-size: var(--size-p);
+    color: var(--secondary-text-color);
+    margin-bottom: 20px;
+}
+
+
+.containerMap {
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerMap h1 {
+    font-size: var(--size-h1);
+    margin-bottom: 20px;
+}
+
+.map {
+    width: 650px;
+    height: 350px;
+    border-radius: 10px;
+    border: none;
+}
+
+/* piernas */
+
+footer {
+    margin-top: 70px;
+    background-color: var(--dark-theme-background-secundary);
+    color: var(--secondary-text-color);
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.containerFooter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.containerFooter h2 {
+    font-size: var(--size-h2);
+}
+
+.containerSocial {
+    display: flex;
+    font-size: var(--size-h1);
+    gap: 30px;
+}
+
+/*chat bot*/
+.containerChatBot {
+    height: 50px;
+    width: 50px;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.chatBot {
+    height: 400px;
+    width: 400px;
+    position: fixed;
+    right: -10px;
+    bottom: -34px;
+    border: none;
+    border-radius: 10px;
+}
+
+.closeChatBot {
+    height: 30px;
+    width: 30px;
+    position: fixed;
+    bottom: 336px;
+    right: 361px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: none;
+    color: var(--highlight-color);
+    z-index: 1000;
+    background-color: var(--highlight-color);
+    color: var(--main-text-color);
+    border-radius: 40px;
+    text-align: center;
+}
+
+.containerChatBot img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+/*Modo oscuro*/
+
+.hoverLinkHeader:hover,
+.hoverLinkFooter:hover {
+    transform: scale(1.1);
+    transform-origin: 50% 50%;
+    opacity: 0.6;
+    transition: all 0.2s ease;
+}
