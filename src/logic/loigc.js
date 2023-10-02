@@ -1,7 +1,7 @@
 function convertValues ({ inversion, comisionCompra }) {
   if (!inversion) return 0
   const valueToNumber = inversion - (comisionCompra * inversion / 100)
-  const newValuer = parseFloat(valueToNumber).toLocaleString('co-CO', { minimumFractionDigits: 2 })
+  const newValuer = parseFloat(valueToNumber)
   return newValuer
 }
 
