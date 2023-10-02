@@ -230,6 +230,7 @@ main {
     font-size: var(--size-p);
 }
 
+
 .boxInput {
     display: flex;
     justify-content: space-between;
@@ -246,12 +247,12 @@ main {
 .select {
     background-color: transparent;
     color: var(--border-color);
-    -webkit-appearance: button;
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
     border: none;
     outline: none;
-    appearance: none;
     text-indent: 1px;
-    text-overflow: '';
     padding-left: 13px;
 }
 
@@ -260,7 +261,7 @@ main {
     color: var(--border-color);
     font-size: 1.1em;
     width: 300px;
-    border-radius: 0;
+    height: 100px;
     border: none;
 }
 
@@ -333,6 +334,12 @@ main {
     border-radius: 5px;
     color: var(--amount-up);
     background-color: var(--amount-background-up);
+    font-size: 1.1em;
+}
+
+.iconResult{
+    vertical-align: bottom;
+    font-size: 1.1em;
 }
 
 .boxAmount {

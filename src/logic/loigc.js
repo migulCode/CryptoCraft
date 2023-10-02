@@ -22,7 +22,7 @@ function calculateLostProfits (value) {
   const totalPaid = totalCoins * precioCompra
   const totalSale = totalCoins * precioVenta
 
-  return (totalSale - totalPaid - comisionValue).toLocaleString('co-CO', { minimumFractionDigits: 2 })
+  return (totalSale - totalPaid - comisionValue)
 }
 
 function totalDepartureAmount (value) {
@@ -45,7 +45,7 @@ function totalDepartureAmount (value) {
   const totalPaid = totalCoins * precioCompra
   const totalSale = totalCoins * precioVenta
 
-  return (((totalSale - totalPaid) - comisionValue) + newValueInversion).toLocaleString('co-CO', { minimumFractionDigits: 2 })
+  return (((totalSale - totalPaid) - comisionValue) + newValueInversion)
 }
 
 export { convertValues, calculateLostProfits, totalDepartureAmount }
