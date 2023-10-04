@@ -5,9 +5,9 @@ const getValueCrypto = async (crypto) => {
     if (!crypto) {
       return ''
     } else {
-      const url = `https://criptoya.com/api/bitso/${crypto}/cop`
+      const url = `https://criptoya.com/api/bitsoalpha/${crypto}/cop`
       const response = await axios.get(url)
-      const { data } = await response
+      const { data } = response
       return data
     }
   } catch (error) {
