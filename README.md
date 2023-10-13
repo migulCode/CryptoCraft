@@ -44,10 +44,6 @@ Este proyecto está desarrollado utilizando las siguientes tecnologías:
    ```
    Este comando te permite previsualizar la aplicación construida antes de la implementación.
 
-**Contribución:**
-
-¡Estamos abiertos a contribuciones! Si encuentras problemas o tienes ideas para mejorar CryptoCraft, no dudes en abrir un problema o enviar un pull request.
-
 **Licencia:**
 
 Este proyecto está bajo la Licencia [MIT](LICENSE), lo que significa que puedes usar, modificar y distribuir el código como desees.
